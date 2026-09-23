@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quiz Bowl Math Reviewer</title>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <header class="topbar">
+      <div>
+        <p class="eyebrow">COMPREHENSIVE REVIEWER</p>
+        <h1>Quiz Bowl Mathematics Reviewer</h1>
+      </div>
+      <button class="print-btn" onclick="window.print()">Print / Save as PDF</button>
+    </header>
+
+    <main class="page">
+      <section class="subject">
+        <h2>1. Algebra</h2>
+
+        <div class="topic">
+          <h3>Quadratic equations and Viète's formulas</h3>
+          <p>
+            A quadratic equation has the form <strong>ax² + bx + c = 0</strong>, with
+            <strong>a ≠ 0</strong>. The roots are found using the quadratic formula:
+          </p>
+          <div class="formula">x = (-b ± √(b² - 4ac)) / 2a</div>
+          <p>
+            The discriminant <strong>D = b² - 4ac</strong> tells the nature of the roots:
+            if D &gt; 0, there are two real roots; if D = 0, one repeated root; if D &lt; 0,
+            no real roots.
+          </p>
+          <p>
+            Viète's formulas relate the roots <strong>r₁</strong> and <strong>r₂</strong> to the
+            coefficients:
+          </p>
+          <div class="formula">r₁ + r₂ = -(b / a) and r₁r₂ = c / a</div>
+        </div>
+
+        <div class="topic">
+          <h3>Arithmetic sequences and series</h3>
+          <p>
+            An arithmetic sequence adds the same constant <strong>d</strong> each time. If the
+            first term is <strong>a₁</strong>, then the nth term is:
+          </p>
+          <div class="formula">a_n = a₁ + (n - 1)d</div>
+          <p>
+            The sum of the first n terms is:
+          </p>
+          <div class="formula">S_n = n/2 (a₁ + a_n) = n/2 [2a₁ + (n - 1)d]</div>
+          <p>
+            Use the common difference to identify missing terms and to find the total quickly.
+          </p>
+        </div>
+
+        <div class="topic">
+          <h3>Logarithms and solving exponential equations</h3>
+          <p>
+            A logarithm answers the question: “What exponent gives this value?” If
+            <strong>b^x = y</strong>, then <strong>x = log_b(y)</strong>.
+          </p>
+          <div class="formula">log_b(xy) = log_b x + log_b y</div>
+          <div class="formula">log_b(x / y) = log_b x - log_b y</div>
+          <div class="formula">log_b(x^n) = n log_b x</div>
+          <p>
+            To solve exponential equations, rewrite both sides with the same base or take logs.
+            Example: <strong>2^x = 16</strong> means <strong>x = 4</strong> because 2⁴ = 16.
+          </p>
+        </div>
+
+        <div class="topic">
+          <h3>Absolute value equations</h3>
+          <p>
+            The absolute value of a number is its distance from zero. Therefore,
+            <strong>|x| = a</strong> means <strong>x = a</strong> or <strong>x = -a</strong>, as long as
+            a ≥ 0.
+          </p>
+          <p>
+            For equations like <strong>|2x - 5| = 9</strong>, split into two cases:
+          </p>
+          <div class="formula">2x - 5 = 9 or 2x - 5 = -9</div>
+          <p>
+            Solve both equations separately and check the solutions in the original equation.
+          </p>
+        </div>
+
+        <div class="topic">
+          <h3>Polynomial Remainder Theorem</h3>
+          <p>
+            If a polynomial <strong>P(x)</strong> is divided by <strong>x - a</strong>, the remainder is
+            <strong>P(a)</strong>. This is the Remainder Theorem.
+          </p>
+          <p>
+            If <strong>P(a) = 0</strong>, then <strong>x - a</strong> is a factor of the polynomial.
+            This also gives a quick way to test whether a number is a root.
+          </p>
+        </div>
+
+        <div class="topic">
+          <h3>Work and rate word problems</h3>
+          <p>
+            Rate problems depend on how much work is done per unit of time.
+            If one person completes a job in <strong>t</strong> hours, their rate is:
+          </p>
+          <div class="formula">rate = 1 / t</div>
+          <p>
+            For combined work, add rates:
+          </p>
+          <div class="formula">1 / t₁ + 1 / t₂ + ... = 1 / T</div>
+          <p>
+            Where T is the combined time to finish the whole job. Use careful units and convert
+            all rates to “job per hour” or “job per minute.”
+          </p>
+        </div>
+
+        <div class="practice-block">
+          <h3>Algebra Work Practice</h3>
+          <ol>
+            <li>Solve: x² - 7x + 12 = 0</li>
+            <li>Find the 12th term of the arithmetic sequence 3, 7, 11, 15, ...</li>
+            <li>Find the sum of the first 10 terms of the arithmetic sequence 5, 9, 13, ...</li>
+            <li>Solve: log₂(x) = 5</li>
+            <li>Solve: 3^x = 81</li>
+            <li>Solve: |2x - 5| = 9</li>
+            <li>If P(x) = x³ - 4x² + x + 6, find P(2)</li>
+            <li>One worker can paint a room in 6 hours and another in 4 hours. How long will they take together?</li>
+          </ol>
+        </div>
+
+        <div class="answer-block">
+          <h3>Algebra Answer Key</h3>
+          <ol>
+            <li>x = 3 or x = 4</li>
+            <li>a₁₂ = 47</li>
+            <li>S₁₀ = 230</li>
+            <li>x = 32</li>
+            <li>x = 4</li>
+            <li>x = 7 or x = -2</li>
+            <li>P(2) = 0, so x - 2 is a factor</li>
+            <li>2.4 hours or 2 hours 24 minutes</li>
+          </ol>
+        </div>
+      </section>
+
+      <section class="subject">
+        <h2>2. Geometry</h2>
+
+        <div class="topic">
+          <h3>Interior angles of regular polygons</h3>
+          <p>
+            The sum of the interior angles of an n-sided polygon is:
+          </p>
+          <div class="formula">(n - 2)180°</div>
+          <p>
+            For a regular polygon, each interior angle is:
+          </p>
+          <div class="formula">((n - 2)180°) / n</div>
+          <p>
+            Example: A regular hexagon has each interior angle of 120° because
+            <strong>(6 - 2)180 / 6 = 120</strong>.
+          </p>
+        </div>
+
+        <div class="topic">
+          <h3>Similar triangles and area ratios</h3>
+          <p>
+            Two triangles are similar if their corresponding angles are equal and their sides are
+            proportional. For similar triangles, the ratio of corresponding sides is constant.
+          </p>
+          <p>
+            If the similarity ratio is <strong>k</strong>, then the ratio of corresponding areas is
+            <strong>k²</strong>.
+          </p>
+          <div class="formula">A₁ / A₂ = (s₁ / s₂)²</div>
+          <p>
+            This is a useful shortcut in scale drawings, maps, and comparison problems.
+          </p>
+        </div>
+
+        <div class="topic">
+          <h3>Right triangle properties (altitude, legs, and hypotenuse)</h3>
+          <p>
+            In a right triangle, the side opposite the right angle is the hypotenuse. The other two
+            sides are the legs. The Pythagorean Theorem states:
+          </p>
+          <div class="formula">a² + b² = c²</div>
+          <p>
+            If an altitude is drawn to the hypotenuse, it creates two smaller right triangles that
+            are similar to the original triangle. This makes it possible to derive relationships
+            among the segments of the hypotenuse, the altitude, and the legs.
+          </p>
+        </div>
+
+        <div class="practice-block">
+          <h3>Geometry Work Practice</h3>
+          <ol>
+            <li>Find the sum of the interior angles of a decagon.</li>
+            <li>Find each interior angle of a regular pentagon.</li>
+            <li>Two triangles are similar. If the side ratio is 3:5, what is the ratio of their areas?</li>
+            <li>A right triangle has legs 6 and 8. Find the hypotenuse.</li>
+            <li>A regular octagon has how many degrees in each interior angle?</li>
+          </ol>
+        </div>
+
+        <div class="answer-block">
+          <h3>Geometry Answer Key</h3>
+          <ol>
+            <li>1440°</li>
+            <li>108°</li>
+            <li>9:25</li>
+            <li>10</li>
+            <li>135°</li>
+          </ol>
+        </div>
+      </section>
+
+      <section class="subject">
+        <h2>3. Trigonometry</h2>
+
+        <div class="topic">
+          <h3>Circular function and the unit circle</h3>
+          <p>
+            A unit circle has center at the origin and radius 1. Any angle θ on the unit circle has
+            coordinates <strong>(cos θ, sin θ)</strong>.
+          </p>
+          <p>
+            This relationship connects angles and coordinates and is essential for solving trig
+            problems quickly and accurately. The angle is measured from the positive x-axis.
+          </p>
+        </div>
+
+        <div class="topic">
+          <h3>Trigonometric functions across different quadrants</h3>
+          <p>
+            The signs of sine, cosine, and tangent depend on the quadrant:
+          </p>
+          <ul>
+            <li>Quadrant I: all positive</li>
+            <li>Quadrant II: sine positive</li>
+            <li>Quadrant III: tangent positive</li>
+            <li>Quadrant IV: cosine positive</li>
+          </ul>
+          <p>
+            Reference angles help determine values in any quadrant by using the acute angle with the
+            x-axis.
+          </p>
+        </div>
+
+        <div class="topic">
+          <h3>Fundamental trigonometric identities</h3>
+          <p>Core identities include:</p>
+          <div class="formula">sin²θ + cos²θ = 1</div>
+          <div class="formula">tan θ = sin θ / cos θ</div>
+          <div class="formula">sec θ = 1 / cos θ</div>
+          <div class="formula">csc θ = 1 / sin θ</div>
+          <div class="formula">cot θ = 1 / tan θ</div>
+          <p>
+            These identities allow you to simplify expressions, prove equations, and solve trig
+            equations.
+          </p>
+        </div>
+
+        <div class="topic">
+          <h3>Solving trigonometric equations</h3>
+          <p>
+            To solve trig equations, isolate the trig function first, then use known values on the
+            unit circle or reference angles. Always check the domain and find all solutions within the
+            required interval.
+          </p>
+          <p>
+            Example: <strong>sin x = 1/2</strong> gives <strong>x = 30° + 360°k</strong> or
+            <strong>x = 150° + 360°k</strong>.
+          </p>
+        </div>
+
+        <div class="practice-block">
+          <h3>Trigonometry Work Practice</h3>
+          <ol>
+            <li>Find sin 30°.</li>
+            <li>Find cos 90°.</li>
+            <li>In which quadrant is sin positive and cos negative?</li>
+            <li>Use the identity sin²θ + cos²θ = 1 to find cos θ if sin θ = 3/5 and θ is in Quadrant I.</li>
+            <li>Solve sin x = 1/2 for 0° ≤ x ≤ 360°.</li>
+          </ol>
+        </div>
+
+        <div class="answer-block">
+          <h3>Trigonometry Answer Key</h3>
+          <ol>
+            <li>1/2</li>
+            <li>0</li>
+            <li>Quadrant II</li>
+            <li>4/5</li>
+            <li>x = 30° or 150°</li>
+          </ol>
+        </div>
+      </section>
+
+      <section class="subject">
+        <h2>4. Pre-Calculus</h2>
+
+        <div class="topic">
+          <h3>Equations of circles (center and radius)</h3>
+          <p>
+            The standard form of a circle with center <strong>(h, k)</strong> and radius <strong>r</strong>
+            is:
+          </p>
+          <div class="formula">(x - h)² + (y - k)² = r²</div>
+          <p>
+            This formula is used to identify the center, radius, and graph of a circle from an
+            equation.
+          </p>
+        </div>
+
+        <div class="topic">
+          <h3>Conic sections</h3>
+          <p>
+            Conic sections are curves formed by intersecting a plane with a cone. The major types are:
+          </p>
+          <ul>
+            <li>Circle: all points equidistant from a center</li>
+            <li>Parabola: set of points equidistant from a focus and directrix</li>
+            <li>Ellipse: sum of distances to two foci is constant</li>
+            <li>Hyperbola: difference of distances to two foci is constant</li>
+          </ul>
+          <p>
+            Their equations and key features are central in pre-calculus and calculus.
+          </p>
+        </div>
+
+        <div class="practice-block">
+          <h3>Pre-Calculus Work Practice</h3>
+          <ol>
+            <li>Write the equation of a circle with center (3, -2) and radius 5.</li>
+            <li>Find the center and radius of the circle x² + y² - 4x + 6y - 12 = 0.</li>
+            <li>State the type of conic section defined by x² + y² = 49.</li>
+            <li>State the type of conic section defined by x² / 9 - y² / 16 = 1.</li>
+          </ol>
+        </div>
+
+        <div class="answer-block">
+          <h3>Pre-Calculus Answer Key</h3>
+          <ol>
+            <li>(x - 3)² + (y + 2)² = 25</li>
+            <li>Center (2, -3), radius 5</li>
+            <li>Circle</li>
+            <li>Hyperbola</li>
+          </ol>
+        </div>
+      </section>
+
+      <section class="subject">
+        <h2>5. Differential Calculus</h2>
+
+        <div class="topic">
+          <h3>Limits and continuity</h3>
+          <p>
+            A limit describes the value a function approaches as x approaches a certain number. If
+            the function approaches the same value from both sides, the limit exists.
+          </p>
+          <p>
+            Continuity means that the function has no breaks, jumps, or holes at that point. A
+            function is continuous at x = a if the limit exists, the function is defined at a, and
+            both are equal.
+          </p>
+        </div>
+
+        <div class="topic">
+          <h3>Application of derivatives</h3>
+          <p>
+            Derivatives measure rate of change. They help determine velocity, slope of a tangent,
+            increasing and decreasing intervals, and optimization.
+          </p>
+          <p>
+            If <strong>f'(x) &gt; 0</strong>, the function is increasing; if <strong>f'(x) &lt; 0</strong>,
+            it is decreasing.
+          </p>
+        </div>
+
+        <div class="topic">
+          <h3>Rules of differentiation</h3>
+          <p>Common rules include:</p>
+          <div class="formula">d/dx (x^n) = n x^(n-1)</div>
+          <div class="formula">d/dx (c f(x)) = c f'(x)</div>
+          <div class="formula">d/dx (f ± g) = f' ± g'</div>
+          <div class="formula">d/dx (fg) = f'g + fg'</div>
+          <div class="formula">d/dx (f/g) = (f'g - fg') / g²</div>
+          <p>
+            These rules are used to differentiate polynomial, rational, and product/quotient
+            expressions.
+          </p>
+        </div>
+
+        <div class="topic">
+          <h3>Finding the slope and equation of a tangent line</h3>
+          <p>
+            The derivative at a point gives the slope of the tangent line to the curve there.
+          </p>
+          <div class="formula">m = f'(a)</div>
+          <p>
+            Then the equation of the tangent line at <strong>(a, f(a))</strong> is:
+          </p>
+          <div class="formula">y - f(a) = f'(a)(x - a)</div>
+        </div>
+
+        <div class="topic">
+          <h3>Word problems on optimization (max/min) and related rates</h3>
+          <p>
+            Optimization problems ask for the largest or smallest value of a quantity. Usually, write
+            the function, take the derivative, set it to zero, and test critical points.
+          </p>
+          <p>
+            Related rates problems connect how fast quantities change with respect to time. Differentiate
+            the equation that relates the quantities and then substitute known values.
+          </p>
+        </div>
+
+        <div class="practice-block">
+          <h3>Differential Calculus Work Practice</h3>
+          <ol>
+            <li>Find the limit: lim(x→3) (x² - 9)/(x - 3)</li>
+            <li>Differentiate f(x) = x³ - 5x² + 7x - 2</li>
+            <li>Find the slope of the tangent to y = x² + 2x at x = 1</li>
+            <li>Find the equation of the tangent line to y = x² at x = 2</li>
+            <li>A rectangle has width x and length 20 - x. Find the maximum area.</li>
+          </ol>
+        </div>
+
+        <div class="answer-block">
+          <h3>Differential Calculus Answer Key</h3>
+          <ol>
+            <li>6</li>
+            <li>f'(x) = 3x² - 10x + 7</li>
+            <li>4</li>
+            <li>y = 4x - 4</li>
+            <li>100 square units</li>
+          </ol>
+        </div>
+      </section>
+    </main>
+
+    <script src="index.js"></script>
+  </body>
+</html>
